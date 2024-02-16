@@ -1,0 +1,26 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#play-area{
+    width: 40vw;
+    min-width: 250px;
+    min-height: 250px;
+    height: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    border: 5px solid cyan;
+}
+.grid-cell{
+    background-color: lightcyan;
+}
+.grid-cell:nth-child(odd){
+    background-color: lightblue;
+}
