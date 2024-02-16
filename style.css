@@ -24,3 +24,6 @@ body{
 .grid-cell:nth-child(odd){
     background-color: lightblue;
 }
+.snake-head{
+    background-color: green;
+}
