@@ -10,7 +10,7 @@ export default function player(){
     let gridsArray = Array.from(grids)
     let dividedGrid = divideArray(gridsArray, gridDimensions)
     
-    playerMove(dividedGrid, randomGrid, 100)
+    playerMove(dividedGrid, randomGrid, gridDimensions, 100)
 }
 
 function divideArray(array, size){
@@ -21,8 +21,8 @@ function divideArray(array, size){
     return newArray
 }
 
-function playerMove(divGrid, randGrid, timeInterval){
-    let playerPos = getPlayerPos(randGrid, 15)
+function playerMove(divGrid, randGrid, gridDim, timeInterval){
+    let playerPos = getPlayerPos(randGrid, gridDim)
     let interval
     document.addEventListener('keydown', (e) => {
         switch(e.key){
